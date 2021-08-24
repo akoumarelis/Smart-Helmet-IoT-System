@@ -1,3 +1,7 @@
+//Developer: Anastaios Koumarelis (akoumarelis@gmail.com)
+//University: Hellenic Mediteranian University, Department of Electrical and Computer Engineering, Msc in Informatics Engineering 
+//Course: Internet of Things: Technologies and Applications 2020-2021
+
 //HEAD
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
