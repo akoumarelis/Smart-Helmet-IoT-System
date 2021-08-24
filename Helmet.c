@@ -1,4 +1,4 @@
-//Developer: Anastaios Koumarelis (akoumarelis@gmail.com)
+//Developer: Anastasios Koumarelis (akoumarelis@gmail.com)
 //University: Hellenic Mediteranian University, Department of Electrical and Computer Engineering, Msc in Informatics Engineering 
 //Course: Internet of Things: Technologies and Applications 2020-2021
 
