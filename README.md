@@ -46,8 +46,6 @@ All the other components mentioned above for the bicycle helmet were placed on t
     
 In the Server part, several different technologies were used for data exchange and visualization. In the structure, we have a Docker in which three programs run on it. The Node-Red receives the data and stores it in the database created within InfluxDB. At the end of the third program, Grafana collects the data from the database and displays it.
 
-//Developer: Anastaios Koumarelis (akoumarelis@gmail.com)
-
-//University: Hellenic Mediteranian University, Department of Electrical and Computer Engineering, Msc in Informatics Engineering 
-
-//Course: Internet of Things: Technologies and Applications 2020-2021
+Developer: Anastaios Koumarelis (akoumarelis@gmail.com) 
+University: Hellenic Mediteranian University, Department of Electrical and Computer Engineering, Msc in Informatics Engineering 
+Course: Internet of Things: Technologies and Applications 2020-2021
