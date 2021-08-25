@@ -44,7 +44,13 @@ All the other components mentioned above for the bicycle helmet were placed on t
     Light (two white 3mm led) on pins D33-D232
     Custom pressure sensor on pin D35
     
-In the Server part, several different technologies were used for data exchange and visualization. In the structure, we have a Docker in which three programs run on it. The Node-Red receives the data and stores it in the database created within InfluxDB. At the end of the third program, Grafana collects the data from the database and displays it.
+In the Server part, several different technologies were used for data exchange and visualization. In the structure, we have a Docker in which three programs run on it. The Node-Red receives the data and stores it in the database created within InfluxDB. At the end of the third program, Grafana collects the data from the database and displays it. After the docker installed run in command line the commands:
+
+    docker run -p 3000:3000 --name grafana
+    docker run -p 8086:8086 -v influxdb:/var/lib/influxdb --name infuxdb influxdb:1.8.5
+    docker run -it -p 1880:1880 -p 1883:1883 -v node_red_data:/data --name mynodered nodered/node-red
+
+My information:
 
     Developer: Anastasios Koumarelis (akoumarelis@gmail.com)
     University: Hellenic Mediteranian University, Department of Electrical and Computer Engineering, Msc in Informatics Engineering
