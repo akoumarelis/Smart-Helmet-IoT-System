@@ -50,7 +50,7 @@ In the Server part, several different technologies were used for data exchange a
     docker run -p 8086:8086 -v influxdb:/var/lib/influxdb --name infuxdb influxdb:1.8.5
     docker run -it -p 1880:1880 -p 1883:1883 -v node_red_data:/data --name mynodered nodered/node-red
 
-My information:
+Personal info:
 
     Developer: Anastasios Koumarelis (akoumarelis@gmail.com)
     University: Hellenic Mediteranian University, Department of Electrical and Computer Engineering, Msc in Informatics Engineering
