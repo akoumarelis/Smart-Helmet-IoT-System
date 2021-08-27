@@ -41,7 +41,7 @@ All the other components mentioned above for the bicycle helmet were placed on t
     Left flash (two red led 3mm) on pins D13-D12
     Right flash (two red led 3mm) on pins D27-D26
     Brake (a red 3mm led) on pins D25
-    Light (two white 3mm led) on pins D33-D232
+    Light (two white 3mm led) on pins D33-D32
     Custom pressure sensor on pin D35
     
 In the Server part, several different technologies were used for data exchange and visualization. In the structure, we have a Docker in which three programs run on it. The Node-Red receives the data and stores it in the database created within InfluxDB. At the end of the third program, Grafana collects the data from the database and displays it. After the docker installed run in command line the commands:
