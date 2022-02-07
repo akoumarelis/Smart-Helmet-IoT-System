@@ -42,13 +42,32 @@ All the other components mentioned above for the bicycle helmet were placed on t
     Right flash (two red led 3mm) on pins D27-D26
     Brake (a red 3mm led) on pins D25
     Light (two white 3mm led) on pins D33-D32
-    Custom pressure sensor on pin D35
+    Custom pressure sensor on pin D35    
     
-In the Server part, several different technologies were used for data exchange and visualization. In the structure, we have a Docker in which three programs run on it. The Node-Red receives the data and stores it in the database created within InfluxDB. At the end of the third program, Grafana collects the data from the database and displays it. After the docker installed run in command line the commands:
+    
+![image](https://user-images.githubusercontent.com/57871380/152786860-8597dfb3-fd2b-4a81-8dc1-95a1e897df6b.png)
+
+
+In the Server part, several different technologies were used for data exchange and visualization. In the structure, we have a Docker in which three programs run on it.After the docker installed run in command line the commands:
 
     docker run -p 3000:3000 --name grafana
     docker run -p 8086:8086 -v influxdb:/var/lib/influxdb --name infuxdb influxdb:1.8.5
     docker run -it -p 1880:1880 -p 1883:1883 -v node_red_data:/data --name mynodered nodered/node-red
+    
+![image](https://user-images.githubusercontent.com/57871380/152786355-97147327-fc6d-4111-b730-7b065b2af4a1.png)
+
+The Node-Red receives the data and stores it in the database created within InfluxDB. 
+
+![image](https://user-images.githubusercontent.com/57871380/152786459-0ee55e9f-d304-462b-bc13-ce53eae0b4ec.png)
+
+At the end of the third program, Grafana collects the data from the database and displays it. 
+
+![image](https://user-images.githubusercontent.com/57871380/152786505-ef3fc518-922b-4d37-8b61-f8ccfa1e26fe.png)
+![image](https://user-images.githubusercontent.com/57871380/152786510-3d9d2876-9e9b-4ff3-ad06-010ba5e329da.png)
+![image](https://user-images.githubusercontent.com/57871380/152786516-1845c6be-b2d6-4772-9bbf-b5bc7ce91633.png)
+![image](https://user-images.githubusercontent.com/57871380/152786545-91bb16ef-2ff3-400f-b8ed-68b318713ee9.png)
+![image](https://user-images.githubusercontent.com/57871380/152786560-a02c6a8b-4eb1-4621-8c0d-a1eaf2ad1ed8.png)
+
 
 Personal info:
 
